@@ -16,7 +16,7 @@ void setUpAssemblychain()
 
 assemblyInterface::assemblyInterface()
 {
-	_next = NULL;
+	_next = nullptr;
 }
 
 

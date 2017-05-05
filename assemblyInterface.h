@@ -1,6 +1,5 @@
 //assemblyInterface.h
 
-#include "assemblers.h"
 #include <memory>
 using std::unique_ptr;
 #include <vector>
@@ -32,7 +31,6 @@ private:
 	virtual ~assemblyInterface() {}
 
 protected:
-
 	unique_ptr<assemblyInterface> _next;
 
 	void setNext (unique_ptr<assemblyInterface> ptr);
@@ -41,8 +39,6 @@ protected:
 	bool containsPart(vector<part> parts, part p);
 
 public:	
-
-	
 	virtual void assemble(vector<part> parts) = 0;
 
 };
