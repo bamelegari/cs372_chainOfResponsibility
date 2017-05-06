@@ -4,34 +4,46 @@
 
 
 
-void partAAssembler::assemble(vector<part> parts)
+void partAAssembler::assemble(part p)
 {
-	if containsPart(parts, partA)
+	if (p == partA)
 		cout << "Assembling part A" << endl;
 	else
+	{
 		cout << "Assembler A skipping" << endl;
+		assemblyInterface::assemble(parts);
+	}
 }
 
-void partBAssembler::assemble(vector<part> parts)
+void partBAssembler::assemble(part p)
 {
-	if containsPart(parts, partB)
+	if (p == partB)
 		cout << "Assembling part B" << endl;
 	else
+	{
 		cout << "Assembler B skipping" << endl;
+		assemblyInterface::assemble(parts);
+	}
 }
 
-void partCAssembler::assemble(vector<part> parts)
+void partCAssembler::assemble(part p)
 {
-	if containsPart(parts, partC)
+	if (p == partC)
 		cout << "Assembling part C" << endl;
 	else
+	{
 		cout << "Assembler C skipping" << endl;
+		assemblyInterface::assemble(parts);
+	}
 }
 
-void partDAssembler::assemble(vector<part> parts)
+void partDAssembler::assemble(part p)
 {
-	if containsPart(parts, partD)
+	if (p == partD)
 		cout << "Assembling part D" << endl;
 	else
+	{
 		cout << "Assembler D skipping" << endl;
+		assemblyInterface::assemble(parts);
+	}
 }

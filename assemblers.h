@@ -6,35 +6,35 @@
 #define ASSEMBLERS_H
 
 
-class partAAssembler : assemblyInterface
+class partAAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(vector<part> parts);
+	void assemble(part p);
 
 };
 
-class partBAssembler : assemblyInterface
+class partBAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(vector<part> parts);
+	void assemble(part p);
 
 };
 
-class partCAssembler : assemblyInterface
+class partCAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(vector<part> parts);
+	void assemble(part p);
 
 };
 
-class partDAssembler : assemblyInterface
+class partDAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(vector<part> parts);
+	void assemble(part p);
 
 };
 
