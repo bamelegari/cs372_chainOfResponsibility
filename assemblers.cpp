@@ -1,49 +1,50 @@
 //assemblers.cpp
 
 #include "assemblers.h"
+#include <iostream>
+using std::cout;
+using std::endl;
 
-
-
-void partAAssembler::assemble(part p)
+void partAAssembler::assemble(char part)
 {
-	if (p == partA)
+	if (part == 'A')
 		cout << "Assembling part A" << endl;
 	else
 	{
 		cout << "Assembler A skipping" << endl;
-		assemblyInterface::assemble(parts);
+		assemblyInterface::assemble(part);
 	}
 }
 
-void partBAssembler::assemble(part p)
+void partBAssembler::assemble(char part)
 {
-	if (p == partB)
+	if (part == 'B')
 		cout << "Assembling part B" << endl;
 	else
 	{
 		cout << "Assembler B skipping" << endl;
-		assemblyInterface::assemble(parts);
+		assemblyInterface::assemble(part);
 	}
 }
 
-void partCAssembler::assemble(part p)
+void partCAssembler::assemble(char part)
 {
-	if (p == partC)
+	if (part == 'C')
 		cout << "Assembling part C" << endl;
 	else
 	{
 		cout << "Assembler C skipping" << endl;
-		assemblyInterface::assemble(parts);
+		assemblyInterface::assemble(part);
 	}
 }
 
-void partDAssembler::assemble(part p)
+void partDAssembler::assemble(char part)
 {
-	if (p == partD)
+	if (part == 'D')
 		cout << "Assembling part D" << endl;
 	else
 	{
 		cout << "Assembler D skipping" << endl;
-		assemblyInterface::assemble(parts);
+		assemblyInterface::assemble(part);
 	}
 }

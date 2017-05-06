@@ -1,16 +1,17 @@
 //assemblers.h
 
-#include "assemblyInterface.h"
 
 #ifndef ASSEMBLERS_H
 #define ASSEMBLERS_H
 
+#include "assemblyInterface.h"
 
 class partAAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(part p);
+	using assemblyInterface::assemblyInterface; //inherit base c'tor
+	void assemble(char part);
 
 };
 
@@ -18,7 +19,8 @@ class partBAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(part p);
+	using assemblyInterface::assemblyInterface;
+	void assemble(char part);
 
 };
 
@@ -26,7 +28,8 @@ class partCAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(part p);
+	using assemblyInterface::assemblyInterface;
+	void assemble(char part);
 
 };
 
@@ -34,7 +37,8 @@ class partDAssembler : public assemblyInterface
 {
 
 public:
-	void assemble(part p);
+	using assemblyInterface::assemblyInterface;
+	void assemble(char part);
 
 };
 

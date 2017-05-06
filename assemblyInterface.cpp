@@ -7,13 +7,12 @@ assemblyInterface::assemblyInterface()
 	_next = nullptr;
 }
 
-
-void assemblyInterface::setNext(unique_ptr<assemblyInterface> ptr)
+void assemblyInterface::setNext(shared_ptr<assemblyInterface> ptr)
 {
-	_next = ptr;
+	_next = move(ptr);
 }
 
-void assemblyInterface::assemble(part p)
+void assemblyInterface::assemble(char part)
 {
-	_next->assemble(p)
+	_next->assemble(part);
 }
