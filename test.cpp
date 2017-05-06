@@ -1,4 +1,14 @@
 //test.cpp
+//Bryce Melegari
+//UAF CS372 Final
+
+//demonstration of the "chain of responsibility" design pattern.
+//this example treats the chain as a mutually exclusive assembly line. A request is sent
+//by client code to the assembly interface, which then moves the request through all
+//the assemblers on the line until the correct one (which can handle the request) 
+//receives it.
+
+
 #include "assemblyInterface.h"
 #include "assemblers.h"
 

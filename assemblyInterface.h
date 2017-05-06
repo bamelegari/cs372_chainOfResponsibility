@@ -1,4 +1,5 @@
 //assemblyInterface.h
+//represents the forward-facing interface called by client
 
 #ifndef ASSEMBLYINTERFACE_H
 #define ASSEMBLYINTERFACE_H

@@ -1,5 +1,5 @@
 //assemblers.h
-
+//represents the chained-together concrete handlers
 
 #ifndef ASSEMBLERS_H
 #define ASSEMBLERS_H

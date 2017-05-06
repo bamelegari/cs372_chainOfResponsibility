@@ -9,7 +9,7 @@ assemblyInterface::assemblyInterface()
 
 void assemblyInterface::setNext(shared_ptr<assemblyInterface> ptr)
 {
-	_next = move(ptr);
+	_next = ptr;
 }
 
 void assemblyInterface::assemble(char part)
